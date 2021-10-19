@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Cool Plugins</title>
+        <link rel="stylesheet" href="jquery-drawpad.css" />
+        <link href="https://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+        <link href="https://cdn.bootcss.com/normalize/7.0.0/normalize.min.css" rel="stylesheet">
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+        <script src="jquery-drawpad.js"></script>
+        <link rel="stylesheet" href="gallery.css">
+        <script>
+            $(document).ready(function() {
+                $("#target").drawpad();
+            });
+        </script>
+        <style>
+            .gallery-container{
+                margin: 3rem 0;
+                background-color: wheat;
+                height: 300px;
+            }
+            .gallery-container img{
+                width: 350px;
+            }
+            section{
+                margin-bottom: 5rem;
+            }
+        </style>
+    </head>
+    <body>
+        <!--1-->
+        <h1>jQuery Drawpad: Signature Pad Example</h1>
+        <p>A lightweight, simple-to-use jQuery drawing pad (pen tool) plugin that enables you to draw smooth lines and curves on an HTML5 canvas element.</p>
+        <div id="target" class="drawpad-dashed"></div>
+    
+        <!--2-->
+        <header class="ScriptHeader">
+            <div class="rt-container">
+                <div class="col-rt-12">
+                    <div class="rt-heading">
+                        <h1>Responsive CSS Only Carousel Slider Demo</h1>
+                        <p>Allow to Add multiple items and Images</p>
+                    </div>
+                </div>
+            </div>
+        </header>
+        
+        <section>
+            <div class="rt-container">
+                  <div class="col-rt-12">
+                        <div class='demo-container'>
+                            <div class='carousel'>
+                                <input checked='checked' class='carousel__activator' id='carousel-slide-activator-1' name='carousel' type='radio'>
+                                <input class='carousel__activator' id='carousel-slide-activator-2' name='carousel' type='radio'>
+                                <input class='carousel__activator' id='carousel-slide-activator-3' name='carousel' type='radio'>
+                                <div class='carousel__controls'>
+                                <label class='carousel__control carousel__control--forward' for='carousel-slide-activator-2'>
+                                    👉
+                                </label>
+                                </div>
+                                <div class='carousel__controls'>
+                                <label class='carousel__control carousel__control--backward' for='carousel-slide-activator-1'>
+                                    👈
+                                </label>
+                                <label class='carousel__control carousel__control--forward' for='carousel-slide-activator-3'>
+                                    👉
+                                </label>
+                                </div>
+                                <div class='carousel__controls'>
+                                <label class='carousel__control carousel__control--backward' for='carousel-slide-activator-2'>
+                                    👈
+                                </label>
+                                </div>
+                                <div class='carousel__screen'>
+                                <div class='carousel__track'>
+                                    <div class='carousel__item carousel__item--mobile-in-1 carousel__item--tablet-in-2 carousel__item--desktop-in-3'>
+                                    <div class='demo-content'>
+                                        a
+                                    </div>
+                                    </div>
+                                    <div class='carousel__item carousel__item--mobile-in-1 carousel__item--tablet-in-2 carousel__item--desktop-in-3'>
+                                    <div class='demo-content'>
+                                        b
+                                    </div>
+                                    </div>
+                                    <div class='carousel__item carousel__item--mobile-in-1 carousel__item--tablet-in-2 carousel__item--desktop-in-3'>
+                                    <div class='demo-content'>
+                                        c
+                                    </div>
+                                    </div>
+                                    <div class='carousel__item carousel__item--mobile-in-1 carousel__item--tablet-in-2 carousel__item--desktop-in-3'>
+                                    <div class='demo-content'>
+                                        d
+                                    </div>
+                                    </div>
+                                    <div class='carousel__item carousel__item--mobile-in-1 carousel__item--tablet-in-2 carousel__item--desktop-in-3'>
+                                    <div class='demo-content'>
+                                        e
+                                    </div>
+                                    </div>
+                                    <div class='carousel__item carousel__item--mobile-in-1 carousel__item--tablet-in-2 carousel__item--desktop-in-3'>
+                                    <div class='demo-content'>
+                                        f
+                                    </div>
+                                    </div>
+                                    <div class='carousel__item carousel__item--mobile-in-1 carousel__item--tablet-in-2 carousel__item--desktop-in-3'>
+                                    <div class='demo-content'>
+                                        g
+                                    </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--3-->
+        <h1>Pure Javascript Photo Slider</h1>
+        <div class="gallery-container">
+            <div class="gallery-wrapper">
+                <div class="gallery-slide" data-index="0">
+                    <img data-src="1.jpg" src="loading.gif" alt="" class="lazy">
+                </div>
+                <div class="gallery-slide" data-index="0">
+                    <img data-src="2.jpg" src="loading.gif" alt="" class="lazy">
+                </div>
+                <div class="gallery-slide" data-index="0">
+                    <img data-src="3.jpg" src="loading.gif" alt="" class="lazy">
+                </div>
+            </div>
+            <div class="gallery-pagination"></div>
+        </div>
+        <script src="https://cdn.bootcss.com/hammer.js/2.0.8/hammer.min.js"></script>
+        <script src="gallery.js"></script>
+        <script>
+            var gallery = new Gallery('.gallery-container', {
+                pagination: '.gallery-pagination',
+                paginationClickable: true,
+                zoom: true,
+                loop: false,
+                lazyLoading: true,
+                base64: true
+            })
+        </script>
+    </body>
+</html>
